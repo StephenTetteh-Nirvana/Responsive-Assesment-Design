@@ -1,6 +1,6 @@
 'use client'
 
-import { Menu } from "lucide-react"
+import { Menu, X } from "lucide-react"
 import { useState } from "react"
 import Image from "next/image"
 
@@ -17,10 +17,10 @@ const Navbar = () => {
           width={30}
           height={30}
         />
-        <h3>Toutem</h3>
+        <h3 className="font-[500]">Toutem</h3>
       </div>
 
-      <ul className="hidden sm:flex sm:gap-2">
+      <ul className="hidden sm:flex sm:gap-2 font-[400]">
         <li>HOME</li>
         <li>ABOUT US</li>
         <li>SHOP</li>
@@ -28,8 +28,8 @@ const Navbar = () => {
       </ul>
 
       <div>
-        <button className="cursor-pointer sm:hidden" onClick={()=>setOpen(!open)}>
-          <Menu/>
+        <button className="cursor-pointer sm:hidden">
+          {!open ? <Menu onClick={()=>setOpen(true)}/> : <X onClick={()=>setOpen(false)}/>}
         </button>
         <div className="hidden sm:flex sm:gap-4">
           <Image
