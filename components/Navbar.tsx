@@ -1,0 +1,80 @@
+'use client'
+
+import { Menu } from "lucide-react"
+import { useState } from "react"
+import Image from "next/image"
+
+const Navbar = () => {
+  const [open,setOpen] = useState(false)
+
+  return (
+    <>
+    <div className="px-10 flex justify-between items-center shadow shadow-gray-200 py-3">
+      <div className="flex gap-4 items-center">
+        <Image
+          src="/icons/logo.png"
+          alt="Logo"
+          width={30}
+          height={30}
+        />
+        <h3>Toutem</h3>
+      </div>
+
+      <ul className="hidden sm:flex sm:gap-2">
+        <li>HOME</li>
+        <li>ABOUT US</li>
+        <li>SHOP</li>
+        <li>CONTACT</li>
+      </ul>
+
+      <div>
+        <button className="cursor-pointer sm:hidden" onClick={()=>setOpen(!open)}>
+          <Menu/>
+        </button>
+        <div className="hidden sm:flex sm:gap-4">
+          <Image
+            src="/icons/shoppingBag.png"
+            width={16}
+            height={16}
+            alt='Shopping Bag'
+          />
+            <Image
+            src="/icons/search.png"
+            width={16}
+            height={16}
+            alt='Search'
+          />
+        </div>
+      </div>
+    </div>
+
+    {/* MOBILE NAVIGATION  */}
+      <div className={`overflow-hidden transition-all duration-500 ease-in-out ${open ? "h-56 opacity-100 visible" : "h-0 opacity-0 invisible"} 
+        sm:hidden flex flex-col gap-2 justify-center items-center bg-[#F9FAFB]`}
+      >
+        <ul className="flex flex-col items-center">
+          <li>HOME</li>
+          <li>ABOUT US</li>
+          <li>SHOP</li>
+          <li>CONTACT</li>
+        </ul>
+        <div className="mt-3 flex gap-3">
+          <Image
+            src="/icons/shoppingBag.png"
+            width={16}
+            height={16}
+            alt='Shopping Bag'
+          />
+          <Image
+            src="/icons/search.png"
+            width={16}
+            height={16}
+            alt='Search'
+          />
+        </div>
+      </div>
+    </>
+  )
+}
+
+export default Navbar
