@@ -34,7 +34,7 @@ const Services = () => {
             alt='Service' 
             className="w-auto h-auto sm:w-[60px]"
           />
-          <p className="text-primary text-center text-[15px]">{service.text}</p>
+          <p className="text-[var(--color-primary)] text-center text-[15px]">{service.text}</p>
         </div>
       ))}
     </div>

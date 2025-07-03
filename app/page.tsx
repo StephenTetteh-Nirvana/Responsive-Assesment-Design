@@ -1,4 +1,6 @@
+import Advertisement from "@/components/home/Advertisement";
 import Aromatherapy from "@/components/home/Aromatherapy";
+import BestSellers from "@/components/home/BestSellers";
 import HeroSection from "@/components/home/HeroSection";
 import Services from "@/components/home/Services";
 
@@ -9,6 +11,8 @@ export default function Home() {
         <HeroSection/>
         <Services/>
         <Aromatherapy/>
+        <BestSellers/>
+        <Advertisement/>
       </main>
     </div>
   )
