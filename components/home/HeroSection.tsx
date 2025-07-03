@@ -24,15 +24,13 @@ const HeroSection = () => {
           className="w-auto h-auto sm:w-[500px] md:w-[350px]"
           alt="heroBackground"
         />
-        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/3">
-          <Image
-            src="/images/hero.png"
-            width={300}
-            height={300}
-            className="w-auto h-auto sm:w-[450px]"
-            alt="heroPng" 
-            />
-        </div>
+        <Image
+          src="/images/hero.png"
+          width={300}
+          height={300}
+          className="w-auto h-auto sm:w-[450px] md:w-[150px] absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/3"
+          alt="heroPng" 
+        />
       </section>
     </div>
   )
