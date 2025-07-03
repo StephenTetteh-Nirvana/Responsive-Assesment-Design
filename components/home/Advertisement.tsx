@@ -3,7 +3,7 @@ import Image from "next/image"
 
 const Advertisement = () => {
   return (
-    <div className="relative h-[70vh] w-full mt-15">
+    <div className="relative h-[70vh] sm:h-[50vh] w-full mt-15">
 
       {/* MOBILE VIEW  */}
       <div className="sm:hidden">
@@ -11,7 +11,7 @@ const Advertisement = () => {
           src="/images/AdImage.png"
           alt="AdImage"
           fill
-          className="object-cover rounded-2xl bg-black/20"
+          className="object-cover rounded-2xl"
         />
   
         <div className="flex flex-col gap-3 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
