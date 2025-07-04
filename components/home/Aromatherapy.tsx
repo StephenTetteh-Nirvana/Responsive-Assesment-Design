@@ -6,17 +6,17 @@ const Aromatherapy = () => {
       <div className="relative sm:-left-35">
         <Image
           src="/images/aromatherapyBackground.png"
-          width={200}
-          height={200}
+          width={500}
+          height={500}
           alt="cover"
           className="w-auto h-auto sm:w-[250px]"
         />
         <Image
           src="/images/aromatherapyImage.png"
-          width={100}
-          height={100}
+          width={500}
+          height={500}
           alt="cover"
-          className="w-auto h-auto absolute top-1/2 left-1/2 transform -translate-x-1/3 -translate-y-1/2
+          className="w-auto h-auto absolute top-1/2 left-1/2 transform -translate-x-[45%] -translate-y-[60%]
           sm:w-[400px] sm:ml-15"
         />
       </div>

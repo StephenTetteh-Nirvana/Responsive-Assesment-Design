@@ -1,6 +1,5 @@
 import Image from "next/image"
 
-
 const Advertisement = () => {
   return (
     <div className="relative h-[70vh] sm:h-[50vh] w-full mt-15">

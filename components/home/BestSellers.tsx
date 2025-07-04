@@ -7,8 +7,8 @@ const BestSellers = () => {
         <Image
           src="/images/BestSellersCover.png"
           alt="Best Sellers" 
-          width={200}
-          height={200}
+          width={500}
+          height={500}
           className='w-auto h-auto'
         />
         <div className='flex flex-col gap-3 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2
@@ -23,10 +23,10 @@ const BestSellers = () => {
         <div className='relative'>
           <Image
             src="/images/bestSellerOne.png"
-            width={300}
-            height={300}
+            width={500}
+            height={500}
             alt="bestSellerOne"
-            // className='w-auto h-auto'
+            className='w-auto h-auto'
           />
 
           <section className='absolute bottom-1 left-5 backdrop-blur-sm py-2 rounded-bl-full'>
@@ -43,10 +43,10 @@ const BestSellers = () => {
         <div className='relative'>
           <Image
             src="/images/bestSellerTwo.png"
-            width={300}
-            height={300}
+            width={500}
+            height={500}
             alt="bestSellerTwo"
-            // className='w-auto h-auto'
+            className='w-auto h-auto'
           />
 
           <section className='absolute bottom-1 left-5 backdrop-blur-sm py-2 rounded-bl-full'>

@@ -29,12 +29,12 @@ const Services = () => {
         >
           <Image
             src={service.icon}
-            width={40}
-            height={40}
+            width={500}
+            height={500}
             alt='Service' 
-            className="w-auto h-auto sm:w-[60px]"
+            className="w-[50px] h-auto sm:w-[60px]"
           />
-          <p className="text-[var(--color-primary)] text-center text-[15px]">{service.text}</p>
+          <p className="text-primary text-center text-[15px]">{service.text}</p>
         </div>
       ))}
     </div>

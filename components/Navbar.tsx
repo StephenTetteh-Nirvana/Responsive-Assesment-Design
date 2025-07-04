@@ -14,8 +14,9 @@ const Navbar = () => {
         <Image
           src="/icons/logo.png"
           alt="Logo"
-          width={30}
-          height={30}
+          width={500}
+          height={500}
+          className="w-auto h-auto"
         />
         <h3 className="font-[500]">Toutem</h3>
       </div>
@@ -34,15 +35,17 @@ const Navbar = () => {
         <div className="hidden sm:flex sm:gap-4">
           <Image
             src="/icons/shoppingBag.png"
-            width={16}
-            height={16}
+            width={500}
+            height={500}
             alt='Shopping Bag'
+            className="w-auto h-auto"
           />
             <Image
             src="/icons/search.png"
-            width={16}
-            height={16}
+            width={500}
+            height={500}
             alt='Search'
+            className="w-auto h-auto"
           />
         </div>
       </div>
@@ -61,15 +64,17 @@ const Navbar = () => {
         <div className="mt-3 flex gap-3">
           <Image
             src="/icons/shoppingBag.png"
-            width={16}
-            height={16}
+            width={500}
+            height={500}
             alt='Shopping Bag'
+            className="w-auto h-auto"
           />
           <Image
             src="/icons/search.png"
-            width={16}
-            height={16}
+            width={500}
+            height={500}
             alt='Search'
+            className="w-auto h-auto"
           />
         </div>
       </div>

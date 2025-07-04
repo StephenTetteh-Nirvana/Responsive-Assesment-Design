@@ -27,13 +27,13 @@ const Blog = () => {
           <div key={index} className="w-[50%] mt-4">
             <Image 
              src={blog.src}
-             width={600}
-             height={100}
+             width={500}
+             height={500}
              alt="BlogImage"
              className="w-full h-auto object cover"
             />
   
-            <div className="px-4 py-2 shadow-2xl">
+            <div className="px-4 py-2 shadow-xl">
               <p className="text-primary font-[600] text-[15px] border-b border-b-gray-300 py-1">{blog.title}</p>
               <p className="font-[400] text-[13px] line-clamp-2">{blog.text}</p>
             </div>
